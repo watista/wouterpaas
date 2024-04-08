@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119735118-1"></script>
+
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-119735118-1');
+  </script>
+  
+    <title>Wouter Paas</title>
+  </head>
+  <body>
+      <video playsinline controls autoplay class="movie">
+        <source src="/movie.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+  </body>
+</html>
