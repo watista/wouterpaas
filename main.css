@@ -622,6 +622,11 @@ img {
     margin-bottom: 7px;
 }
 
+.job {
+    width: 65%;
+    margin-bottom: 7px;
+}
+
 @media only screen and (max-width: 600px) {
   .company {
     width: 100%;
@@ -638,32 +643,36 @@ img {
   inherits: false;
 }
 
-@keyframes linux-progress {
- to { --progress-value: 85; }
+@keyframes ubuntu-progress {
+ to { --progress-value: 75; }
 }
 
 @keyframes python-progress {
- to { --progress-value: 80; }
+ to { --progress-value: 70; }
 }
 
 @keyframes bash-progress {
- to { --progress-value: 70; }
+ to { --progress-value: 65; }
+}
+
+@keyframes lemp-progress {
+ to { --progress-value: 80; }
 }
 
 @keyframes aws-progress {
  to { --progress-value: 70; }
 }
 
-@keyframes azure-progress {
- to { --progress-value: 75; }
-}
-
 @keyframes terraform-progress {
- to { --progress-value: 70; }
+ to { --progress-value: 65; }
 }
 
 @keyframes cicd-progress {
- to { --progress-value: 70; }
+ to { --progress-value: 75; }
+}
+
+@keyframes elastic-progress {
+ to { --progress-value: 65; }
 }
 
 .progress-bar {
@@ -681,20 +690,20 @@ img {
   content: counter(percentage) '%';
 }
 
-.linux {
+.ubuntu {
   background:
-    radial-gradient(closest-side, transparent 79%, transparent 80% 100%),
+    radial-gradient(closest-side, transparent 79%, transparent 75% 100%),
     conic-gradient(#454545 calc(var(--progress-value) * 1%), #999999 0);
-  animation: linux-progress 1.5s 1 forwards;
+  animation: ubuntu-progress 1.5s 1 forwards;
 }
 
-.linux::before {
-  animation: linux-progress 1.5s 1 forwards;
+.ubuntu::before {
+  animation: ubuntu-progress 1.5s 1 forwards;
 }
 
 .python {
   background:
-    radial-gradient(closest-side, transparent 79%, transparent 80% 100%),
+    radial-gradient(closest-side, transparent 79%, transparent 70% 100%),
     conic-gradient(#454545 calc(var(--progress-value) * 1%), #999999 0);
   animation: python-progress 1.5s 1 forwards;
 }
@@ -705,7 +714,7 @@ img {
 
 .bash {
   background:
-    radial-gradient(closest-side, transparent 79%, transparent 80% 100%),
+    radial-gradient(closest-side, transparent 79%, transparent 65% 100%),
     conic-gradient(#454545 calc(var(--progress-value) * 1%), #999999 0);
   animation: bash-progress 1.5s 1 forwards;
 }
@@ -714,9 +723,20 @@ img {
   animation: bash-progress 1.5s 1 forwards;
 }
 
-.aws {
+.lemp {
   background:
     radial-gradient(closest-side, transparent 79%, transparent 80% 100%),
+    conic-gradient(#454545 calc(var(--progress-value) * 1%), #999999 0);
+  animation: lemp-progress 1.5s 1 forwards;
+}
+
+.lemp::before {
+  animation: lemp-progress 1.5s 1 forwards;
+}
+
+.aws {
+  background:
+    radial-gradient(closest-side, transparent 79%, transparent 70% 100%),
     conic-gradient(#454545 calc(var(--progress-value) * 1%), #999999 0);
   animation: aws-progress 1.5s 1 forwards;
 }
@@ -725,20 +745,9 @@ img {
   animation: aws-progress 1.5s 1 forwards;
 }
 
-.azure {
-  background:
-    radial-gradient(closest-side, transparent 79%, transparent 80% 100%),
-    conic-gradient(#454545 calc(var(--progress-value) * 1%), #999999 0);
-  animation: azure-progress 1.5s 1 forwards;
-}
-
-.azure::before {
-  animation: azure-progress 1.5s 1 forwards;
-}
-
 .terraform {
   background:
-    radial-gradient(closest-side, transparent 79%, transparent 80% 100%),
+    radial-gradient(closest-side, transparent 79%, transparent 65% 100%),
     conic-gradient(#454545 calc(var(--progress-value) * 1%), #999999 0);
   animation: terraform-progress 1.5s 1 forwards;
 }
@@ -749,13 +758,24 @@ img {
 
 .cicd {
   background:
-    radial-gradient(closest-side, transparent 79%, transparent 80% 100%),
+    radial-gradient(closest-side, transparent 79%, transparent 75% 100%),
     conic-gradient(#454545 calc(var(--progress-value) * 1%), #999999 0);
   animation: cicd-progress 1.5s 1 forwards;
 }
 
 .cicd::before {
   animation: cicd-progress 1.5s 1 forwards;
+}
+
+.elastic {
+  background:
+    radial-gradient(closest-side, transparent 79%, transparent 65% 100%),
+    conic-gradient(#454545 calc(var(--progress-value) * 1%), #999999 0);
+  animation: elastic-progress 1.5s 1 forwards;
+}
+
+.elastic::before {
+  animation: elastic-progress 1.5s 1 forwards;
 }
 
 .skills {
